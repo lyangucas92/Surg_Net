@@ -11,9 +11,6 @@ from scale_attention_layer import scale_atten_convblock
 from nonlocal_layer import NONLocalBlock2D
 from Dense import DenseBlock
 from se import residual_block
-#from convLSTM import ConvLSTMCell
-
-
 
 class Comprehensive_Atten_Unet(nn.Module):
     def __init__(self, args, in_ch=3, n_classes=2, feature_scale=4, is_deconv=True, is_batchnorm=True, deep_supervision=False,
